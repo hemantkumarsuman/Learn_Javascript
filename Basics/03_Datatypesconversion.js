@@ -16,4 +16,8 @@ console.log(typeof score2Num);
 //1->true;0->false
 //""->false
 //"Hemant"->true
+/*-------------------------------------------------------------------------------*/
+
+//OPERATIONS 
+
 
