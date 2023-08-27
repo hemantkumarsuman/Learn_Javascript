@@ -39,13 +39,34 @@ myArr.shift();
 
 //slice(start,end) splice(start.end)
 const newArr=[1,2,3,5,6,78,9];
-console.log("1 ",newArr);
+// console.log("1 ",newArr);
 
-console.log(newArr.slice(2,5)); //new array got created and store values from start to end-1
-console.log("2 ",newArr);
+// console.log(newArr.slice(2,5)); //new array got created and store values from start to end-1
+// console.log("2 ",newArr);
 
-console.log(newArr.splice(3,6));//new array got created and store values from start to end. Also modify original array by deleting new array values
-console.log("3 ",newArr)
+// console.log(newArr.splice(3,6));//new array got created and store values from start to end. Also modify original array by deleting new array values
+// console.log("3 ",newArr)
+
+const char=["Luffy","Naruto","Tanjiro"];
+const char2=["Zoro","Sasuke","Zenitsu"];
+// char.push(char2);
+// console.log(char);//char will take char2 as one data O/P:[ 'Luffy', 'Naruto', 'Tanjiro', [ 'Zoro', 'Sasuke', 'Zenitsu' ] ]
+
+//Find value of Sasuke??
+// console.log(char[3][1]);
+
+let allChar=char.concat(char2); //return new array by combining char+char2
+// console.log(allChar);//char+char2
+
+//spread operator
+let allCharacter=[...char,...char2];//We use this concat becaz if we would want to concat 3 arrays then we would have to do concat operation 2 time 
+                                    //Whereas in case of spread operator we can do in single line
+
+// console.log(allCharacter);
+
+let allCharacter2=[...char,...char2,...newArr];//concat multiple array in single line
+// console.log(allCharacter2);
+
 
 
 
