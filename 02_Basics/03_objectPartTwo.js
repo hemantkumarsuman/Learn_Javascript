@@ -48,5 +48,5 @@ const obj3={
 // console.log(obj4);
 
 //3.Using spred Operator
-const obj4={...obj1,...obj2,...obj3}
-console.log(obj4);
+// const obj4={...obj1,...obj2,...obj3}
+// console.log(obj4);
