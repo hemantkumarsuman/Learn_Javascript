@@ -2,9 +2,9 @@
 //
 function myName()
 {
-    console.log("Hemant");
-    console.log("Kumar");
-    console.log("Suman");
+    // console.log("Hemant");
+    // console.log("Kumar");
+    // console.log("Suman");
 }
 myName //refernce
 myName();//Execution
@@ -48,4 +48,44 @@ function logUserMessage(name="Luffy")   //Default parameter works when we do not
 //  console.log(result1);
 
 
- //Shopping cart situation->user keep on adding item in cart->calculate total price of  item as item come in cart
+ //Shopping cart situation->user keep on adding item in cart->calculate total price of all item as item come in cart
+ //Here we do not number of item coming in cart but we have to add price of each item and show total price
+//For this we use rest operator
+ function calculateCartPrice(...itemPrice)//rest operator syntax 
+ {
+     return itemPrice;
+ }
+//  console.log(calculateCartPrice(200,300,600));//Here we will receive array of itemPrice [ 200, 300, 600 ]
+//  Then add all itemPrice in array
+
+//Another way people use this operator to add
+function calculateCartPrice(val1,val2,...itemPrice)//rest operator syntax 
+{
+    return itemPrice;
+}
+// console.log(calculateCartPrice(200,300,600,130));//here val1=200,val2=300,itemPrice=[ 600, 130 ]
+
+
+
+// Function with OBJECT
+const userInfo={
+    name:"Hemant",
+    age:24
+}
+function extractUserInfo(userInfo)
+{
+    let info=`Username is ${userInfo.name} and age of ${userInfo.name} is ${userInfo.age}`;
+    return info;
+}
+console.log(extractUserInfo(userInfo));
+
+//We can define object in function parameter
+function extractUserInfo(userInfo={
+    name:"Hemant",
+    age:24
+}){
+    let info=`Username is ${userInfo.name} and age of ${userInfo.name} is ${userInfo.age}`;
+    return info;
+}
+console.log(extractUserInfo(userInfo));
+
