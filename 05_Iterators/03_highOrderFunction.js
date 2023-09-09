@@ -24,3 +24,19 @@ const myObject={
 // for (const [game,value] of myObject) {       //Object can not be iterable using forof
 //     console.log(game,"=>",value);
 // }
+
+//To solve this we have forin loop
+
+const myObj={
+    cpp:"C++",
+    js:"Javascript",
+    java:"Java",
+    swift:"Swift"
+}
+for(const key in myObj)
+{
+    console.log(key,"=>",myObj[key]);
+}
+
+//foreach
+
