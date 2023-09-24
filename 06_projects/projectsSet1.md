@@ -59,3 +59,19 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+## project 3 link
+[digitalClock](https://stackblitz.com/edit/dom-project-chaiaurcode-tb7kp8?file=3-DigitalClock%2Fchaiaurcode.js,3-DigitalClock%2Findex.html)
+
+```javascript 
+const clock = document.getElementById('clock');
+
+//display digital time every second
+
+setInterval(function () {
+  let date = new Date();
+  //console.log(date.toLocaleTimeString());
+  clock.innerHtml = date.toLocaleTimeString();
+}, 1000);
+
+```
